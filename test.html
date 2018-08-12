@@ -7,15 +7,19 @@
 
 
 <body>
+
+
+
+<div id="fader" style="display:none">
+
+    <a href="index.html"><img id="close" src="close.svg"></a>
     <h3 class="page-header">Don't Make Me Think <span class="by">by</span> Steve Krug<br>
-      <span class="sub">Notes & quotes</span>
+      <span class="sub">Thoughts & quotes</span>
     </h3>
-
-
     <hr>
     <div class="spacer"></div>
 
-    <p class="uppercase"> <i  class="fas fa-paper-plane"></i> &nbsp; Overview</p>
+    <p class="uppercase"> <i class="fas fa-paper-plane"></i> &nbsp; Thoughts</p>
     <p>Some people have an ability to write placeholder text... It's an art you're basically born with. You either have it or you don't. Look at that text! Would anyone use that? Can you imagine that, the text of your next webpage?! It’s about making placeholder text great again. That’s what people want, they want placeholder text to be great again.</p>
 
     <div class="spacer"></div>
@@ -24,5 +28,20 @@
 
     <blockquote>Some people have an ability to write placeholder text...</blockquote>
     <blockquote>Some people have an ability to write placeholder text... It's an art you're basically born with. You either have it or you don't. Look at that text!</blockquote>
+    <blockquote>Some people have an ability to write placeholder text...</blockquote>
+
+</div>
+
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+          $('#fader').fadeIn();
+      });
+
+    </script>
 
 </body>

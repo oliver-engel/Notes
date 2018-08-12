@@ -7,9 +7,33 @@ body{
   word-wrap: break-word;
 }
 
-h3{
+#close{
+  height:17px;
+  width:17px;
+  padding:8px;
+  border-radius:25px;
+
+float:right;
+clear:right;
+
 
 }
+
+#close:hover{
+  background-color: #F7F7F7;
+}
+
+body {
+  opacity: 1;
+  transition: 0.7s opacity;
+}
+
+body.fade {
+    opacity: 0;
+    transition: none;
+}
+
+
 
 .sub{
   color:#9CA6B6;
@@ -32,6 +56,10 @@ p{
   line-height:24px;
   border-radius:2px;
 
+}
+
+.fas{
+  color:#3375f7;
 }
 
 blockquote{
@@ -62,6 +90,7 @@ blockquote{
   font-weight: 500;
   color:#1e1e1e;
   border-radius: 3px;
+  padding-top: 35px;
 }
 
 .by{
@@ -75,6 +104,12 @@ blockquote{
   font-weight: 500;
   color:#2d6cf3;
 
+}
+
+.back{
+
+  color: #2d6cf3;
+  text-decoration: none;
 }
 
 
