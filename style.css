@@ -21,7 +21,7 @@ h3{
 }
 
 hr{
-  border: 0px solid #e8e8e8; border-top-width: 1px;
+  border: 0px solid #bfc7d4; border-top-width: 1px;
   margin:0px;
   padding:0px;
 
@@ -31,8 +31,18 @@ p{
   color:#50596c;
   line-height:24px;
   border-radius:2px;
-  padding:15px;
-  margin-bottom:15px;
+
+}
+
+blockquote{
+  padding:23px 25px 25px 25px;
+  /* border: 1px solid #bfc7d4; */
+  background-color: #b6bdc72b;
+  border-radius: 3px;
+  color:#50596c;
+  margin: 20px 0 0 0;
+  line-height:24px;
+
 }
 
 .no-link-style{
@@ -45,5 +55,29 @@ p{
   color:#1e1e1e;
   padding:25px;
   border-radius: 3px;
+}
 
+.page-header{
+  line-height:24px;
+  font-weight: 500;
+  color:#1e1e1e;
+  border-radius: 3px;
+}
+
+.by{
+  font-family: Georgia, serif;
+  font-style: italic;
+}
+
+.uppercase{
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  color:#2d6cf3;
+
+}
+
+
+.spacer{
+  height:45px;
 }
