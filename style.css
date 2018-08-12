@@ -111,3 +111,10 @@ blockquote{
 .spacer{
   height:45px;
 }
+
+
+li{
+  line-height: 30px;
+  color:#50596c;
+  padding-bottom: 15px;
+}
