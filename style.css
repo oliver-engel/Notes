@@ -7,6 +7,11 @@ body{
   word-wrap: break-word;
 }
 
+@media (max-width: 700px){
+  body{max-width:100%; padding:12vmin 5vmin;}
+
+}
+
 #close{
   height:17px;
   width:17px;
