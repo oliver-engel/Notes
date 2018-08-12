@@ -84,6 +84,14 @@ blockquote{
   padding-top: 45px;
 }
 
+.further-reading{
+  line-height:24px;
+  font-weight: 500;
+  color:#1e1e1e;
+  border-radius: 3px;
+  padding-bottom:25px;
+}
+
 .quote-image{
   width:100%;
   padding-bottom:25px;
