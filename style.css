@@ -12,27 +12,13 @@ body{
   width:17px;
   padding:8px;
   border-radius:25px;
-
-float:right;
-clear:right;
-
-
+  float:right;
+  clear:right;
 }
 
 #close:hover{
   background-color: #F7F7F7;
 }
-
-body {
-  opacity: 1;
-  transition: 0.7s opacity;
-}
-
-body.fade {
-    opacity: 0;
-    transition: none;
-}
-
 
 
 .sub{
@@ -90,7 +76,7 @@ blockquote{
   font-weight: 500;
   color:#1e1e1e;
   border-radius: 3px;
-  padding-top: 35px;
+  padding-top: 45px;
 }
 
 .by{
