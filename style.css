@@ -92,10 +92,15 @@ blockquote{
   padding-bottom:25px;
 }
 
+.full-image{
+  width:100%;
+}
+
 .quote-image{
   width:100%;
   padding-bottom:25px;
 }
+
 .by{
   font-family: Georgia, serif;
   font-style: italic;
