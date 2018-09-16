@@ -35,6 +35,11 @@ body{
   background-color: #f7f7f7;
 }
 
+h2{
+  font-weight:700;
+  letter-spacing: 1.2;
+}
+
 hr{
   border: 0px solid #bfc7d4; border-top-width: 1px;
   margin:0px;
