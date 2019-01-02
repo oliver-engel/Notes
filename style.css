@@ -12,6 +12,11 @@ body{
 
 }
 
+.section-img{
+  width:80%;
+  margin:20px;
+}
+
 #close{
   height:17px;
   width:17px;
