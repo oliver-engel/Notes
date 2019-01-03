@@ -17,10 +17,14 @@
 :root {
   --headerfont: "Univers LT Std";
   --bodyfont: "Univers LT Std";
-  --fullwidth: 100%;
+  --color-background: #f2f3f8;
+  --dark-gray: #393b49;
+  --light-gray: #8e91a7;
 }
 
-
+html{
+  background-color: var(--color-background);
+}
 /* TYPOGRAPHY  */
 
 h1, h2, h3, h4, h5, h6{
@@ -85,7 +89,7 @@ a{
 }
 
 .hero-content > h1 {
-  color:white;
+  color:var(--color-background);
 }
 
 .hero-content > h3 {
@@ -175,6 +179,34 @@ img{
   max-width:100%;
   vertical-align:middle;
   border-radius:1px;
+
+}
+
+footer{
+  height:8rem;
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > p {
+  color: var(--light-gray)
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity:.5;
+  background-color: rgba(0,0,0); /* Black background with opacity */
+  z-index: 150; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
 }
 
 /*////////////////*/
@@ -196,6 +228,34 @@ img{
   table;
 }
 
+.home-grid{
+
+  display: grid;
+
+  /* justify-content: center;
+  align-items: center; */
+  grid-gap:50px;
+
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 150px;
+}
+
+.grid-item{
+
+  text-align: center;
+  background-color:white;
+  padding:90px 100px 100px 100px;
+  box-shadow:0 0.4rem 0.8rem -0.1rem rgba(0,32,128,.1), 0 0 0 1px #f0f2f7;
+  border-radius: .25rem;
+  cursor: pointer;
+}
+
+
+
+.grid-item > h3 {
+  font-weight: normal;
+}
+
 /*////////////////*/
 
 /* RESPONSIVE */
@@ -209,6 +269,14 @@ img{
 }
 
 @media only screen and (max-width: 1024px){
+  .home-grid{
+    grid-template-columns: 1fr;
+    width:100%;
+
+  }
+  .grid-item{
+    padding:100px 50px 100px 50px;
+  }
   .container{
     padding:0 50px;
   }
