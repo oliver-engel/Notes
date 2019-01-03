@@ -20,6 +20,15 @@
   --color-background: #f2f3f8;
   --dark-gray: #393b49;
   --light-gray: #8e91a7;
+  --color-hero: #000;
+  --hero-text:#f2f3f8;
+  --hero-body: #393b49;
+}
+
+.research{
+  --color-hero: #e08d23;
+  --hero-text:#fff2e3;
+  --hero-body:#88520f;
 }
 
 html{
@@ -75,7 +84,7 @@ a{
 
 .hero{
   text-align:center;
-  background-color: black;
+  background-color: var(--color-hero);
   height:35rem;
 
   display: grid;
@@ -86,14 +95,33 @@ a{
 
 .hero-content{
   height:100px;
+  padding:25px;
+  margin-bottom:50px;
 }
 
 .hero-content > h1 {
-  color:var(--color-background);
+  color:var(--hero-text);
 }
 
 .hero-content > h3 {
-  color:#393b49;
+  color:var(--hero-body);
+}
+
+/*////////////////*/
+
+/* HEADER  */
+
+.header{
+
+  position: absolute;
+
+  width: 100%;
+}
+
+.header-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding:50px;
 }
 
 /*////////////////*/
