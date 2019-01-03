@@ -14,21 +14,24 @@
     font-style: normal;
 }
 
-:root {
+.index {
   --headerfont: "Univers LT Std";
   --bodyfont: "Univers LT Std";
   --color-background: #f2f3f8;
   --dark-gray: #393b49;
   --light-gray: #8e91a7;
   --color-hero: #000;
-  --hero-text:#f2f3f8;
+  --hero-text: #f2f3f8;
   --hero-body: #393b49;
+
+
 }
 
 .research{
   --color-hero: #e08d23;
-  --hero-text:#fff2e3;
-  --hero-body:#88520f;
+  --hero-text: #fff2e3;
+  --hero-body: #88520f;
+  /* --color-hero: #393b49; */
 }
 
 html{
@@ -41,14 +44,16 @@ h1, h2, h3, h4, h5, h6{
   font-family:var(--headerfont), sans-serif;
 }
 
+#nostyle{
+  color:var(--hero-body) !important;
+  text-decoration: none;
+}
 
 h5{
-
   color:#393b49;
   margin-bottom:10px;
   font-size:18px;
   line-height:24px;
-
 }
 
 
@@ -125,7 +130,7 @@ a{
 }
 
 .header-content > p {
-  color:var(--dark-gray);
+  color:var(--hero-body);
   font-weight: 600;
 }
 
@@ -159,7 +164,7 @@ a{
 .has-animation{
   opacity:0!important;
   -webkit-transition:transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s, opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s;transition:transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s, opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.15s;
-  -webkit-transition:translateY(80px);transform:translateY(80px);
+  -webkit-transition:translateY(-30px);transform:translateY(-30px);
 }
 
 .has-animation.animate-in{
@@ -330,4 +335,20 @@ footer > p {
   .row_padding_bottom{
     padding-bottom:50px;
   }
+}
+
+
+
+/* TIPPY */
+
+.tippy-tooltip.honeybee-theme .tippy-backdrop {
+
+  background-color: var(--color-hero);
+
+
+}
+
+.tippy-content{
+  font-weight: bold;
+  color: var(--hero-body);
 }
