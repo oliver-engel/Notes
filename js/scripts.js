@@ -3,7 +3,8 @@ $(document).ready(function() {
 
 	AppearItem();
 	FadeHover();
-
+	$('hero').css('display', 'none');
+  $('hero').fadeIn(500);
 });
 
 

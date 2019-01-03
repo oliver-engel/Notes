@@ -31,6 +31,7 @@
   --color-hero: #e08d23;
   --hero-text: #fff2e3;
   --hero-body: #88520f;
+  --light-gray: #8e91a7;
   /* --color-hero: #393b49; */
 }
 
@@ -87,6 +88,8 @@ a{
 
 /* HERO  */
 
+
+
 .hero{
   text-align:center;
   background-color: var(--color-hero);
@@ -95,6 +98,8 @@ a{
   display: grid;
   justify-content: center;
   align-items: center;
+
+
 
 }
 
@@ -231,7 +236,7 @@ footer{
 
 footer > p {
   color: var(--light-gray)
-  
+
 }
 
 #overlay {
@@ -278,6 +283,8 @@ footer > p {
 
   grid-template-columns: 1fr 1fr;
   padding-bottom: 150px;
+
+
 }
 
 .grid-item{
