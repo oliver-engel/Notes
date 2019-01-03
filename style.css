@@ -280,13 +280,19 @@ footer > p {
 }
 
 .grid-item{
-
+  transition: .3s;
   text-align: center;
   background-color:white;
   padding:90px 100px 100px 100px;
   box-shadow:0 0.4rem 0.8rem -0.1rem rgba(0,32,128,.1), 0 0 0 1px #f0f2f7;
   border-radius: .25rem;
   cursor: pointer;
+}
+
+.grid-item:hover{
+  transition: .3s;
+  box-shadow:0 0.5rem 1rem -0.1rem rgba(0,32,128,.2), 0 0 0 1px #f0f2f7;
+
 }
 
 
@@ -352,3 +358,6 @@ footer > p {
   font-weight: bold;
   color: var(--hero-body);
 }
+
+
+/* RESEARCH */
