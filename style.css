@@ -124,6 +124,12 @@ a{
   padding:50px;
 }
 
+.header-content > p {
+  color:var(--dark-gray);
+  font-weight: 600;
+}
+
+
 /*////////////////*/
 
 /* BUTTONS  */
