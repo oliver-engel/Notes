@@ -4,7 +4,9 @@ $(document).ready(function() {
 	AnimateItem();
 	FadeHover();
 	ScrollTop();
+	ScrollToSection();
 	ScrollTopNoRedirect()
+
 
 
 });
@@ -34,6 +36,17 @@ function ScrollTopNoRedirect(){
   $("html, body").animate({ scrollTop: 0 }, "slow");
   return false;
 });
+}
+
+
+function ScrollToSection(){
+	$('a[href*="#"]').on('click', function (e) {
+		e.preventDefault();
+
+		$('html, body').animate({
+			scrollTop: $($(this).attr('href')).offset().top - 50
+		}, 300, 'linear');
+	});
 }
 
 
