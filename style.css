@@ -63,8 +63,9 @@ h1, h2, h3, h4, h5, h6{
 
 
 h2{
-  font-weight: normal;
-  line-height: 50px;
+  font-weight: bold;
+  /* letter-spacing: -0.015rem; */
+  margin-bottom: 15px;
 }
 
 h5{
@@ -93,6 +94,13 @@ a{
   text-decoration:none;
   color:#393b49;
   outline:0;
+}
+
+.text-section h1::before{
+  content:"# ";
+  position: absolute;
+  transform: translateX(-30px);
+  color:var(--green);
 }
 
 .text-section p > a{
@@ -276,7 +284,6 @@ a{
 
 div,
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -317,15 +324,30 @@ img{
 
 
 footer{
-  height:8rem;
+  text-align:center;
+  background-color: var(--faint-gray);
+  height:5rem;
 
   display: grid;
   justify-content: center;
   align-items: center;
+
 }
 
-footer > p {
-  color: var(--light-gray)
+footer  p {
+  text-align: center;
+  color: var(--light-gray);
+
+
+
+}
+
+.footer-notch{
+  background-color: var(--faint-gray);
+  height:25px;
+
+  padding:25px;
+
 
 }
 
