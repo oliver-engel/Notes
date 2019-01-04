@@ -24,7 +24,7 @@ function ScrollTop(){
 		var link = this.getAttribute('href');
 	  $("html, body").animate({ scrollTop: 0 }, "slow", function(){
 			window.location.href = link;
-			console.log(HEYO);
+			console.log("test");
 		});
 	  return false;
 	});
@@ -32,8 +32,9 @@ function ScrollTop(){
 }
 
 function ScrollTopNoRedirect(){
-	$("a[href='#top']").click(function() {
+	$("a[data-what='what']").click(function() {
   $("html, body").animate({ scrollTop: 0 }, "slow");
+	console.log("is anybody there?");
   return false;
 });
 }
