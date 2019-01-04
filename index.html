@@ -14,6 +14,7 @@
   <link href="style.css" rel="stylesheet" />
   <link href="normalize.css" rel="stylesheet" />
 
+
   <!-- <link href="css/fontawesome-all.min.css" rel="stylesheet" /> -->
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,600" rel="stylesheet">
 
@@ -26,10 +27,6 @@
   <meta name="theme-color" content="#ffffff">
 
 
-  <!-- JQUERY -->
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
-  </script>
-
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
 
@@ -38,21 +35,21 @@
 </head>
 
 
-<body>
+<body >
 
   <main>
 
-        <div class="hero">
+        <div class="hero fade-content" >
 
-          <div class="header">
-            <div class="header-content">
-              <p style="text-align:left; font-size: 22px;"><i data-tippy="Hey!" data-tippy-placement="right" data-tippy-theme="honeybee" class="fas fa-bezier-curve"></i></p>
+          <div class="header" >
+            <div class="header-content "  >
+              <p id="swup" class="transition-fade" style="text-align:left; font-size: 22px;"><i data-tippy="Hey!" data-tippy-placement="right" data-tippy-theme="honeybee" class="fas fa-bezier-curve"></i></p>
               <p style="text-align:right">TOPICS &nbsp;<i class="fas fa-angle-down"></i></p>
             </div>
           </div>
 
           <div class="hero-content has-animation" >
-            <h1>Design, Distilled</h1>
+            <h1 >Design, Distilled</h1>
 
             <h3>Notes, readings, and lessons learned from a Master's of HCI + Design Program</h3>
           </div>
@@ -66,33 +63,41 @@
 
             <!-- DEVELOPMENT SECTION -->
 
+        
+
             <div class="has-animation" data-delay="250" style="padding-top:75px; ">
 
-              <div class="container" >
+              <div class="container">
 
 
               <div class="home-grid">
-                <a href="research.html">
+                <a class="fader-link" data-scroll="#top" href="research.html">
                   <div class="grid-item fadeHover">
                     <h1>Research</h1>
                     <h3>Some description here</h3>
                   </div>
                 </a>
 
-                <div class="grid-item fadeHover">
-                  <h1>Ideation</h1>
-                  <h3>Some description here</h3>
-                </div>
+                <a class="fader-link" data-scroll="#top" href="research.html">
+                  <div class="grid-item fadeHover">
+                    <h1>Ideation</h1>
+                    <h3>Some description here</h3>
+                  </div>
+                </a>
 
-                <div class="grid-item fadeHover">
-                  <h1>Interaction</h1>
-                  <h3>Some description here</h3>
-                </div>
+                <a class="fader-link" data-scroll="#top" href="research.html">
+                  <div class="grid-item fadeHover">
+                    <h1>Interaction</h1>
+                    <h3>Some description here</h3>
+                  </div>
+                </a>
 
-                <div class="grid-item fadeHover">
-                  <h1>Prototyping</h1>
-                  <h3>Some description here</h3>
-                </div>
+                <a class="fader-link" data-scroll="#top" href="research.html">
+                  <div class="grid-item fadeHover">
+                    <h1>Prototyping</h1>
+                    <h3>Some description here</h3>
+                  </div>
+                </a>
 
 
               </div>
@@ -119,12 +124,9 @@
 
   <script src="js/jquery.min.js"></script>
   <script src="js/plugins.js"></script>
-
   <script src="js/scripts.js"></script>
 
 
-  <!-- Include jQuery Popup Overlay -->
-  <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
 
 
 </body>
