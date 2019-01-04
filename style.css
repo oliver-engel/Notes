@@ -95,6 +95,10 @@ a{
   outline:0;
 }
 
+.text-section p > a{
+  text-decoration:underline;
+}
+
 .article-title{
   font-weight:700;
   font-size:16px;
